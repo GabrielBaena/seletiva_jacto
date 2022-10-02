@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background-image: url('../images/pokedex_background.png');
+  background-color: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 56%;
+  left: 37%;
+  transform: translate(-63%, 20%);
+  height: 25%;
+}
+
+.pokemon__shiny {
+  position: absolute;
+  bottom: 56%;
+  left: 75%;
+  transform: translate(-63%, 20%);
+  height: 25%;
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  top: 53%;
+  left: 17%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.pokemon__typei {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  bottom: 49%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  left: 28%;
+  font-size: clamp(8px, 5vw, 25px);
+  width: 20%;
+  border-radius: 10px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+}
+
+.pokemon__typeii {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  bottom: 49%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  left: 53%;
+  font-size: clamp(8px, 5vw, 25px);
+  width: 20%;
+  border-radius: 10px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #576975;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 58%;
+  left: 18%;
+}
+
+.input__search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 4px solid #576975;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #576975;
+  font-size: clamp(8px, 5vw, 1rem);
+}
+
+.buttons {
+  position: absolute;
+  bottom: 27%;
+  left: 55%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 4px solid #333f47;
+  border-radius: 10px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #576975;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
